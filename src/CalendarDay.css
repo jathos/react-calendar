@@ -2,8 +2,13 @@
     display: flex;
     background-color: orange;
     width: 13vw;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
     border: solid;
     border-color: black;
     border-width: 2px;
+}
+
+.DayDetail {
+    margin: 0;
 }

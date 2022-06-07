@@ -3,8 +3,8 @@ import './CalendarDay.css'
 function CalendarDay({ day, date }) {
     return (
         <div className='Day'>
-            < p >{day}</p >
-            <p>{date}</p>
+            < p className='DayDetail' >{day}</p >
+            <p className='DayDetail'>{date}</p>
         </div>
     );
 };
