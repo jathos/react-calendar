@@ -1,0 +1,9 @@
+.Day {
+    display: flex;
+    background-color: orange;
+    width: 13vw;
+    justify-content: center;
+    border: solid;
+    border-color: black;
+    border-width: 2px;
+}
