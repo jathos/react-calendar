@@ -12,4 +12,6 @@
 .DayDetail {
     margin: 0;
     font-size: 14pt;
+    font-weight: bold;
+    color: white;
 }

@@ -5,3 +5,32 @@
     margin-bottom: 1.5vh;
     height: 10vh;
 }
+
+.Category {
+    display: flex;
+    height: 100%;
+    margin: 0px 5px 0px 5px;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    border: solid;
+    border-width: 2px;
+    border-color: black;
+    color: white;
+}
+
+.Red {
+    background-color: red;
+}
+
+.Blue {
+    background-color: blue;
+}
+
+.Yellow {
+    background-color: #FFD700;
+}
+
+.Green {
+    background-color: green;
+}
