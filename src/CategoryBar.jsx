@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './CalendarWeek.css'
 
-function CategoryBar({ setColor }) {
+function CategoryBar({ setColor, color }) {
 
     const [yellow, setYellow] = useState("Category Yellow")
     const [blue, setBlue] = useState("Category Blue")
@@ -9,35 +9,55 @@ function CategoryBar({ setColor }) {
     const [red, setRed] = useState("Category Red")
 
     function handleYellow() {
-        setColor("Yellow")
-        setYellow("Category Yellow highlighted")
-        setBlue("Category Blue")
-        setRed("Category Red")
-        setGreen("Category Green")
+        if (color == "Yellow") {
+            setColor("")
+            setYellow("Category Yellow")
+        } else {
+            setColor("Yellow")
+            setYellow("Category Yellow highlighted")
+            setBlue("Category Blue")
+            setRed("Category Red")
+            setGreen("Category Green")
+        }
     }
 
     function handleBlue() {
-        setColor("Blue")
-        setBlue("Category Blue highlighted")
-        setGreen("Category Green")
-        setYellow("Category Yellow")
-        setRed("Category Red")
+        if (color == "Blue") {
+            setColor("")
+            setBlue("Category Blue")
+        } else {
+            setColor("Blue")
+            setBlue("Category Blue highlighted")
+            setGreen("Category Green")
+            setYellow("Category Yellow")
+            setRed("Category Red")
+        }
     }
 
     function handleGreen() {
-        setColor("Green")
-        setGreen("Category Green highlighted")
-        setBlue("Category Blue")
-        setYellow("Category Yellow")
-        setRed("Category Red")
+        if (color == "Gren") {
+            setColor("")
+            setGreen("Category Green")
+        } else {
+            setColor("Green")
+            setGreen("Category Green highlighted")
+            setBlue("Category Blue")
+            setYellow("Category Yellow")
+            setRed("Category Red")
+        }
     }
 
     function handleRed() {
-        setColor("Red")
-        setRed("Category Red highlighted")
-        setGreen("Category Green")
-        setYellow("Category Yellow")
-        setBlue("Category Blue")
+        if (color == "Red") {
+            setColor("")
+            setRed("Category Red")
+        } else {
+            setColor("Red")
+            setRed("Category Red highlighted")
+            setGreen("Category Green")
+            setYellow("Category Yellow")
+            setBlue("Category Blue")
+        }
     }
 
     return (
